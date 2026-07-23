@@ -6,11 +6,9 @@
     <title>Registrazione Confermata — HowMuchMe</title>
     <meta name="robots" content="noindex, nofollow">
     <meta name="googlebot" content="noindex, nofollow">
-    <link rel="canonical" href="https://www.howmuchme.com/registrazione-confermata">
+    <link rel="canonical" href="https://www.howmuchme.com/conferma">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -24,17 +22,12 @@
                         hmm: { blue: '#2563EB', purple: '#7C3AED', dark: '#0F172A', light: '#F8FAFC' }
                     },
                     animation: {
-                        'float': 'float 6s ease-in-out infinite',
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                        'slide-up': 'slideUp 0.8s ease-out forwards',
-                        'fade-in': 'fadeIn 1s ease-out forwards',
                         'scale-in': 'scaleIn 0.6s ease-out forwards',
+                        'slide-up': 'slideUp 0.8s ease-out forwards',
                     },
                     keyframes: {
-                        float: { '0%, 100%': { transform: 'translateY(0)' }, '50%': { transform: 'translateY(-20px)' } },
-                        slideUp: { '0%': { opacity: '0', transform: 'translateY(40px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
-                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
                         scaleIn: { '0%': { opacity: '0', transform: 'scale(0.8)' }, '100%': { opacity: '1', transform: 'scale(1)' } },
+                        slideUp: { '0%': { opacity: '0', transform: 'translateY(40px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
                     }
                 }
             }
@@ -45,28 +38,13 @@
         .gradient-bg { background: linear-gradient(135deg, #2563EB 0%, #7C3AED 100%); }
         .glass { background: rgba(255,255,255,0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
         .dark .glass { background: rgba(15,23,42,0.7); border: 1px solid rgba(255,255,255,0.1); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(37,99,235,0.15); }
-        .dark .card-hover:hover { box-shadow: 0 20px 40px rgba(124,58,237,0.2); }
-        .scroll-reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
-        .scroll-reveal.visible { opacity: 1; transform: translateY(0); }
-        .nav-link { position: relative; }
-        .nav-link::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, #2563EB, #7C3AED); transition: width 0.3s ease; }
-        .nav-link:hover::after { width: 100%; }
-        .download-btn { position: relative; overflow: hidden; transition: all 0.3s ease; }
-        .download-btn::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent); transition: left 0.5s ease; }
-        .download-btn:hover::before { left: 100%; }
-        .download-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(37,99,235,0.3); }
-        .made-in-italy { background: linear-gradient(90deg, #009246 33%, #FFFFFF 33%, #FFFFFF 66%, #CE2B37 66%); height: 4px; border-radius: 2px; margin-top: 0.5rem; }
-        .success-ring { animation: successPulse 2s ease-in-out infinite; }
-        @keyframes successPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); } 50% { box-shadow: 0 0 0 20px rgba(16, 185, 129, 0); } }
-        .particle { position: absolute; border-radius: 50%; background: rgba(37,99,235,0.1); animation: float-particle 20s infinite linear; }
-        .dark .particle { background: rgba(124,58,237,0.1); }
-        @keyframes float-particle { 0% { transform: translateY(100vh) translateX(0); opacity: 0; } 10% { opacity: 1; } 90% { opacity: 1; } 100% { transform: translateY(-100vh) translateX(100px); opacity: 0; } }
         .hero-gradient { background: radial-gradient(ellipse at top right, rgba(124,58,237,0.15) 0%, transparent 50%), radial-gradient(ellipse at bottom left, rgba(37,99,235,0.15) 0%, transparent 50%); }
         .dark .hero-gradient { background: radial-gradient(ellipse at top right, rgba(124,58,237,0.2) 0%, transparent 50%), radial-gradient(ellipse at bottom left, rgba(37,99,235,0.2) 0%, transparent 50%); }
-        .step-number-sm { background: linear-gradient(135deg, #2563EB, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 900; font-size: 2.5rem; line-height: 1; opacity: 0.3; }
-        .dark .step-number-sm { opacity: 0.5; }
+        .success-ring { animation: successPulse 2s ease-in-out infinite; }
+        @keyframes successPulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); } 50% { box-shadow: 0 0 0 20px rgba(16, 185, 129, 0); } }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(37,99,235,0.15); }
+        .step-number-sm { background: linear-gradient(135deg, #2563EB, #7C3AED); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 900; font-size: 2rem; line-height: 1; opacity: 0.4; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 transition-colors duration-300">
@@ -80,16 +58,8 @@
                     <span class="text-xl font-bold gradient-text">HowMuchMe</span>
                 </a>
 
-                <div class="hidden md:flex items-center gap-8">
-                    <a href="/#funzionalita" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400">Funzionalità</a>
-                    <a href="/#come-funziona" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400">Come Funziona</a>
-                    <a href="/#profili" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400">Profili</a>
-                    <a href="/#prezzi" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400">Prezzi</a>
-                    <a href="/#faq" class="nav-link text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400">FAQ</a>
-                </div>
-
                 <div class="flex items-center gap-4">
-                    <button onclick="toggleDarkMode()" class="dark-toggle p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle dark mode">
+                    <button onclick="toggleDarkMode()" class="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle dark mode">
                         <svg class="w-5 h-5 hidden dark:block text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                         </svg>
@@ -97,162 +67,142 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                         </svg>
                     </button>
-                    <a href="/#download" class="hidden sm:inline-flex download-btn gradient-bg text-white px-6 py-2.5 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl">Scarica App</a>
-                    <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" aria-label="Menu">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                        </svg>
-                    </button>
                 </div>
-            </div>
-        </div>
-
-        <div id="mobileMenu" class="hidden md:hidden glass border-t border-slate-200 dark:border-slate-700">
-            <div class="px-4 py-4 space-y-3">
-                <a href="/#funzionalita" class="block py-2 text-sm font-medium text-slate-600 dark:text-slate-300">Funzionalità</a>
-                <a href="/#come-funziona" class="block py-2 text-sm font-medium text-slate-600 dark:text-slate-300">Come Funziona</a>
-                <a href="/#profili" class="block py-2 text-sm font-medium text-slate-600 dark:text-slate-300">Profili</a>
-                <a href="/#prezzi" class="block py-2 text-sm font-medium text-slate-600 dark:text-slate-300">Prezzi</a>
-                <a href="/#faq" class="block py-2 text-sm font-medium text-slate-600 dark:text-slate-300">FAQ</a>
-                <a href="/#download" class="block py-2 gradient-bg text-white px-4 rounded-full text-center text-sm font-semibold">Scarica App</a>
             </div>
         </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="pt-12 lg:pt-20">
-        <!-- Hero Success Section -->
-        <section class="relative min-h-[70vh] flex items-center py-16 overflow-hidden hero-gradient">
-            <div class="absolute inset-0 overflow-hidden pointer-events-none">
-                <div class="particle" style="width:20px;height:20px;left:10%;animation-delay:0s;"></div>
-                <div class="particle" style="width:15px;height:15px;left:30%;animation-delay:5s;"></div>
-                <div class="particle" style="width:25px;height:25px;left:50%;animation-delay:10s;"></div>
-                <div class="particle" style="width:18px;height:18px;left:70%;animation-delay:15s;"></div>
-                <div class="particle" style="width:22px;height:22px;left:90%;animation-delay:8s;"></div>
-            </div>
-
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <!-- Success Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-sm font-semibold mb-8 animate-slide-up">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
-                    </svg>
-                    Registrazione completata
-                </div>
-
+    <main class="pt-20 lg:pt-28">
+        <!-- Hero Section -->
+        <section class="relative flex items-center py-12 overflow-hidden hero-gradient">
+            <div class="max-w-md mx-auto px-4 sm:px-6 relative z-10 text-center w-full">
+                
                 <!-- Success Icon -->
-                <div class="w-28 h-28 mx-auto mb-8 rounded-full bg-green-100 dark:bg-green-900/20 flex items-center justify-center success-ring animate-scale-in" style="animation-delay:0.1s;">
-                    <svg class="w-14 h-14 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-emerald-100 dark:bg-emerald-900/30 flex items-center justify-center success-ring animate-scale-in">
+                    <svg class="w-10 h-10 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
                     </svg>
                 </div>
 
                 <!-- Title -->
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6 animate-slide-up" style="animation-delay:0.2s;">
+                <h1 class="text-3xl sm:text-4xl font-black leading-tight mb-2">
                     <span class="block text-slate-900 dark:text-white">Benvenuto su</span>
-                    <span class="block gradient-text mt-2">HowMuchMe!</span>
+                    <span class="block gradient-text mt-1">HowMuchMe!</span>
                 </h1>
 
                 <!-- Subtitle -->
-                <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed animate-slide-up" style="animation-delay:0.3s;">
-                    La tua registrazione è stata completata con successo.<br>Il tuo profilo è ora attivo e puoi iniziare subito a utilizzare l'app.
+                <p class="text-sm text-slate-600 dark:text-slate-400 mb-6">
+                    La tua email è stata confermata con successo. Il tuo profilo è ora attivo ed operativo.
                 </p>
 
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style="animation-delay:0.4s;">
-				    <!-- Pulsante per cellulare per aprire direttamente l'App -->
-					<a href="howmuchme://login" class="download-btn gradient-bg text-white px-8 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl flex items-center justify-center gap-2">📱 APRI L'APP HOWMUCHME</a>
+                <!-- CARD CONFERMA -->
+                <div class="glass rounded-2xl p-6 shadow-xl border border-emerald-500/30 text-center">
+                    <div class="text-4xl mb-3">🎉</div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Registrazione Completata!</h3>
+                    <p class="text-sm text-slate-600 dark:text-slate-300 mb-6">
+                        Ora puoi accedere alla piattaforma e iniziare ad utilizzare tutti i servizi.
+                    </p>
+                    
+                    <a href="howmuchme://login" class="w-full inline-block gradient-bg text-white py-3.5 px-6 rounded-xl font-bold text-base shadow-lg hover:opacity-90 transition-opacity mb-4">
+                        📱 APRI L'APP HOWMUCHME
+                    </a>
+
+                    <div class="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 text-xs font-semibold">
+                        Se sei su smartphone, l'app si aprirà automaticamente in pochi secondi.
+                    </div>
                 </div>
+
             </div>
         </section>
 
-        <!-- Next Steps Section -->
-        <section class="py-12 lg:py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-16 scroll-reveal">
-                    <span class="inline-block px-4 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-semibold mb-4">Prossimi Passi</span>
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 dark:text-white mb-6">
+        <!-- Prossimi Passi Section -->
+        <section class="py-12 lg:py-16 bg-slate-100/50 dark:bg-slate-800/40 border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <span class="inline-block px-4 py-1 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs font-semibold mb-3">Prossimi Passi</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white mb-3">
                         Inizia al meglio con <span class="gradient-text">HowMuchMe</span>
                     </h2>
-                    <p class="text-lg text-slate-600 dark:text-slate-400">Ecco cosa fare ora, a seconda del tuo profilo.</p>
+                    <p class="text-sm text-slate-600 dark:text-slate-400">Ecco cosa fare ora, a seconda del tuo profilo.</p>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-6">
                     <!-- Privato -->
-                    <div class="card-hover bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal">
-                        <div class="flex items-center gap-4 mb-8">
-                            <div class="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                                <svg class="w-7 h-7 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    <div class="card-hover bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Profilo Privato</h3>
-                                <p class="text-slate-500 dark:text-slate-400 text-sm">Per chi cerca servizi</p>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Profilo Privato</h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs">Per chi cerca servizi</p>
                             </div>
                         </div>
 
-                        <div class="space-y-6">
-                            <div class="flex gap-4 items-start">
+                        <div class="space-y-4">
+                            <div class="flex gap-3 items-start">
                                 <div class="step-number-sm flex-shrink-0">1</div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Crea la tua prima richiesta</h4>
-                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Descrivi il lavoro, seleziona categoria e budget. Le imprese competenti ti contatteranno.</p>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-0.5">Crea la tua prima richiesta</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Descrivi il lavoro, seleziona categoria e budget. Le imprese competenti ti contatteranno.</p>
                                 </div>
                             </div>
-                            <div class="flex gap-4 items-start">
+                            <div class="flex gap-3 items-start">
                                 <div class="step-number-sm flex-shrink-0">2</div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Confronta e scegli</h4>
-                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Ricevi offerte multiple, confronta prezzi e valutazioni, poi scegli l'impresa giusta.</p>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-0.5">Confronta e scegli</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Ricevi offerte multiple, confronta prezzi e valutazioni, poi scegli l'impresa giusta.</p>
                                 </div>
                             </div>
-                            <div class="flex gap-4 items-start">
+                            <div class="flex gap-3 items-start">
                                 <div class="step-number-sm flex-shrink-0">3</div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Valuta il lavoro</h4>
-                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Valuta il lavoro svolto dall'Impresa e aiuta la community a crescere con il tuo feedback</p>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-0.5">Valuta il lavoro</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Valuta il lavoro svolto dall'Impresa e aiuta la community a crescere con il tuo feedback.</p>
                                 </div>
                             </div>							
                         </div>
                     </div>
 
                     <!-- Impresa -->
-                    <div class="card-hover bg-white dark:bg-slate-800 rounded-2xl p-8 border border-slate-200 dark:border-slate-700 scroll-reveal" style="transition-delay:0.15s;">
-                        <div class="flex items-center gap-4 mb-8">
-                            <div class="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
-                                <svg class="w-7 h-7 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    <div class="card-hover bg-white dark:bg-slate-800 rounded-2xl p-6 border border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                             </div>
                             <div>
-                                <h3 class="text-2xl font-bold text-slate-900 dark:text-white">Profilo Impresa</h3>
-                                <p class="text-slate-500 dark:text-slate-400 text-sm">Per chi offre servizi</p>
+                                <h3 class="text-xl font-bold text-slate-900 dark:text-white">Profilo Impresa</h3>
+                                <p class="text-slate-500 dark:text-slate-400 text-xs">Per chi offre servizi</p>
                             </div>
                         </div>
 
-                        <div class="space-y-6">
-                            <div class="flex gap-4 items-start">
+                        <div class="space-y-4">
+                            <div class="flex gap-3 items-start">
                                 <div class="step-number-sm flex-shrink-0">1</div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Inserisci i dati aziendali</h4>
-                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Completa il profilo aggiungendo categorie servite e zone di intervento per ricevere richieste pertinenti.</p>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-0.5">Inserisci i dati aziendali</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Completa il profilo aggiungendo categorie servite e zone di intervento per ricevere richieste pertinenti.</p>
                                 </div>
                             </div>
-                            <div class="flex gap-4 items-start">
+                            <div class="flex gap-3 items-start">
                                 <div class="step-number-sm flex-shrink-0">2</div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Attiva le notifiche</h4>
-                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Ricevi alert in tempo reale per ogni nuova richiesta di preventivo nella tua zona.</p>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-0.5">Attiva le notifiche</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Ricevi alert in tempo reale per ogni nuova richiesta di preventivo nella tua zona.</p>
                                 </div>
                             </div>
-                            <div class="flex gap-4 items-start">
+                            <div class="flex gap-3 items-start">
                                 <div class="step-number-sm flex-shrink-0">3</div>
                                 <div>
-                                    <h4 class="font-bold text-slate-900 dark:text-white mb-1">Rispondi e conquista clienti</h4>
-                                    <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">Invia i tuoi preventivi, gestisci le offerte e costruisci la tua reputazione con le valutazioni.</p>
+                                    <h4 class="font-bold text-sm text-slate-900 dark:text-white mb-0.5">Rispondi e conquista clienti</h4>
+                                    <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">Invia i tuoi preventivi, gestisci le offerte e costruisci la tua reputazione con le valutazioni.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mt-6 p-4 rounded-xl bg-purple-50 dark:bg-purple-900/20 border border-purple-100 dark:border-purple-800">
-                            <p class="text-sm text-purple-700 dark:text-purple-300">
+                        <div class="mt-5 p-3.5 rounded-xl bg-purple-50 dark:bg-purple-900/20 border border-purple-100 dark:border-purple-800">
+                            <p class="text-xs text-purple-700 dark:text-purple-300">
                                 <strong>6 mesi gratuiti inclusi</strong> — Dopo il periodo di prova, il rinnovo annuale è di soli <strong>1€</strong> (1 categoria + 1 zona).
                             </p>
                         </div>
@@ -260,58 +210,22 @@
                 </div>
             </div>
         </section>
-
-     </main>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div class="md:col-span-2">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="logo.png" alt="HowMuchMe Logo" class="w-10 h-10 rounded-xl">
-                        <span class="text-xl font-bold text-white">HowMuchMe</span>
-                    </div>
-                    <p class="text-sm leading-relaxed max-w-md mb-4">La piattaforma mobile che semplifica la richiesta e la gestione dei preventivi tra privati e imprese. Costruita con passione in Italia.</p>
-                    <div class="made-in-italy w-32"></div>
-                    <p class="text-xs mt-2 text-slate-500">Made in Italy</p>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Link Utili</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="/#funzionalita" class="hover:text-white transition-colors">Funzionalità</a></li>
-                        <li><a href="/#profili" class="hover:text-white transition-colors">Profili</a></li>
-                        <li><a href="/#prezzi" class="hover:text-white transition-colors">Prezzi</a></li>
-                        <li><a href="/#faq" class="hover:text-white transition-colors">FAQ</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Contatti</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>info@howmuchme.com</li>
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>howmuchme.com</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-sm">© 2026 HowMuchMe. Tutti i diritti riservati.</p>
-                <p class="text-sm flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>Versione 0.5 in sviluppo</p>
-            </div>
-        </div>
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800 text-center text-sm">
+        <p>© 2026 HowMuchMe. Tutti i diritti riservati.</p>
     </footer>
 
     <script>
-		// Se l'utente è su smartphone (iOS o Android), prova ad aprire automaticamente l'app
-		const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-		if (isMobile) {
-		  setTimeout(() => {
-			window.location.href = "howmuchme://login";
-		  }, 500);
-		}
-	
+        // Se l'utente è su smartphone (iOS o Android), prova ad aprire automaticamente l'app
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (isMobile) {
+            setTimeout(() => {
+                window.location.href = "howmuchme://login";
+            }, 600);
+        }
+
         function toggleDarkMode() {
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
@@ -319,18 +233,6 @@
         if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
         }
-        function toggleMobileMenu() {
-            document.getElementById('mobileMenu').classList.toggle('hidden');
-        }
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-        }, { root: null, rootMargin: '0px', threshold: 0.1 });
-        document.querySelectorAll('.scroll-reveal').forEach((el) => observer.observe(el));
-        window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) navbar.classList.add('shadow-lg');
-            else navbar.classList.remove('shadow-lg');
-        });
     </script>
 </body>
 </html>
