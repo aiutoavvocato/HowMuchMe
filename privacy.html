@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | HowMuchMe</title>
+    <meta name="description" content="Informativa sulla Privacy Policy di HowMuchMe (GDPR 2016/679).">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100 min-h-screen py-8 sm:py-12 px-4 sm:px-6 lg:px-8 transition-colors duration-300">
+    <div class="max-w-3xl mx-auto bg-white dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800 rounded-3xl p-6 sm:p-10 shadow-xl dark:shadow-2xl">
+        <div class="flex items-center justify-between gap-3 mb-8 border-b border-slate-200 dark:border-slate-800 pb-6">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="HowMuchMe Logo" class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl shadow-md">
+                <div>
+                    <h1 class="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">HowMuchMe</h1>
+                    <p class="text-xs text-slate-500 dark:text-slate-400">il tuo preventivo, quando vuoi.</p>
+                </div>
+            </a>
+            <button onclick="toggleDarkMode()" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors" aria-label="Toggle dark mode">
+                <svg class="w-5 h-5 hidden dark:block text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+                <svg class="w-5 h-5 block dark:hidden text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="space-y-6 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
+            <div class="bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800/40 p-5 rounded-2xl">
+                <h2 class="text-lg sm:text-xl font-extrabold text-blue-900 dark:text-white mb-1">🔒 INFORMATIVA PRIVACY POLICY (GDPR 2016/679)</h2>
+                <p class="text-xs text-blue-700 dark:text-blue-300">Regolamento Generale sulla Protezione dei Dati dell'Unione Europea</p>
+                <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Ultimo aggiornamento: Febbraio 2026</p>
+            </div>
+
+            <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">1. TITOLARE DEL TRATTAMENTO</h3>
+                <p>Il titolare del trattamento dei dati è <strong>HowMuchMe</strong>. Per qualsiasi informazione, chiarimento o richiesta è possibile contattare il supporto all'indirizzo email ufficiale: <a href="mailto:info@howmuchme.com" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">info@howmuchme.com</a>.</p>
+            </div>
+
+            <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">2. TIPOLOGIA DI DATI RACCOLTI</h3>
+                <p class="mb-2">HowMuchMe raccoglie e tratta esclusivamente i dati necessari all'erogazione delle funzionalità della piattaforma:</p>
+                <ul class="list-disc list-inside space-y-1.5 ml-2">
+                    <li><strong>Dati identificativi utente privato</strong>: nominativo/username, indirizzo email, recapito telefonico (facoltativo), localizzazione (Comune e CAP per la geolocalizzazione dei servizi).</li>
+                    <li><strong>Dati aziendali e professionali</strong>: Ragione Sociale, Partita IVA, nominativo referente, categorie lavorative e zone operative coperte.</li>
+                    <li><strong>Dati tecnici di servizio</strong>: Token anonimizzati per la ricezione delle notifiche push relative agli stati dei preventivi e messaggi.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">3. FINALITÀ DEL TRATTAMENTO</h3>
+                <p class="mb-2">I dati personali forniti dagli utenti sono utilizzati unicamente per:</p>
+                <ul class="list-disc list-inside space-y-1.5 ml-2">
+                    <li>Permettere la pubblicazione delle richieste di preventivo da parte dei privati;</li>
+                    <li>Consentire alle imprese registrate di formulare preventivi trasparenti;</li>
+                    <li>Inviare comunicazioni di servizio e notifiche push circa lo stato di avanzamento delle offerte;</li>
+                    <li>Garantire la sicurezza, la moderazione e la prevenzione di comportamenti scorretti.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">4. RISERVATEZZA E PROTEZIONE DEI RECAPITI</h3>
+                <p>HowMuchMe applica una rigorosa politica di riservatezza: i dati di contatto diretto (es. numero di telefono, indirizzo preciso) dell'utente privato rimangono oscurati e non accessibili alle imprese fino all'esplicita accettazione del preventivo da parte dell'utente stesso.</p>
+            </div>
+
+            <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white mb-2">5. CONSERVAZIONE DEI DATI E DIRITTI DELL'INTERESSATO</h3>
+                <p class="mb-2">Ai sensi degli artt. 15-22 del Regolamento UE 2016/679 (GDPR), l'utente ha il pieno diritto in qualunque momento di:</p>
+                <ul class="list-disc list-inside space-y-1.5 ml-2">
+                    <li>Accedere ai propri dati personali e richiederne copia;</li>
+                    <li>Richiedere la rettifica o l'aggiornamento dei dati inesatti;</li>
+                    <li>Richiedere la <strong>cancellazione definitiva (diritto all'oblio)</strong> del proprio account e di tutti i dati associati.</li>
+                </ul>
+                <p class="mt-3">
+                    La cancellazione può essere eseguita in qualsiasi momento in totale autonomia direttamente dall'applicazione mobile tramite la voce <strong>“ELIMINA ACCOUNT DALLA PIATTAFORMA”</strong> disponibile nella sezione <em>Profilo ➔ Modifica Profilo</em>, oppure inoltrando una richiesta via email a <a href="mailto:info@howmuchme.com" class="text-blue-600 dark:text-blue-400 font-medium hover:underline">info@howmuchme.com</a>.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-10 pt-6 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
+            <a href="index.html" class="text-sm font-semibold text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors flex items-center gap-1.5">
+                ← Torna alla Home
+            </a>
+            <p class="text-xs text-slate-500">© 2026 HowMuchMe</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+        }
+        if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+</body>
+</html>

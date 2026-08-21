@@ -725,20 +725,20 @@
 
     <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-4 gap-8 mb-8">
-                <div class="md:col-span-2">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-6 mb-8">
+                <div class="lg:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
                         <img src="logo.png" alt="HowMuchMe Logo" class="w-10 h-10 rounded-xl">
                         <span class="text-xl font-bold text-white">HowMuchMe</span>
                     </div>
-                    <p class="text-sm leading-relaxed max-w-md mb-4">La piattaforma mobile che semplifica la richiesta e la gestione dei preventivi tra privati e imprese. Costruita con passione in Italia.</p>
+                    <p class="text-sm leading-relaxed max-w-sm mb-4">La piattaforma mobile che semplifica la richiesta e la gestione dei preventivi tra privati e imprese. Costruita con passione in Italia.</p>
                     <div class="made-in-italy w-32"></div>
                     <p class="text-xs mt-2 text-slate-500">Made in Italy</p>
                 </div>
 
                 <div>
                     <h4 class="text-white font-semibold mb-4">Link Utili</h4>
-                    <ul class="space-y-2 text-sm">
+                    <ul class="space-y-2.5 text-sm">
                         <li><a href="#funzionalita" class="hover:text-white transition-colors">Funzionalità</a></li>
                         <li><a href="#profili" class="hover:text-white transition-colors">Profili</a></li>
                         <li><a href="#prezzi" class="hover:text-white transition-colors">Prezzi</a></li>
@@ -747,22 +747,184 @@
                 </div>
 
                 <div>
+                    <h4 class="text-white font-semibold mb-4">Note Legali</h4>
+                    <ul class="space-y-2.5 text-sm">
+                        <li><a href="termini.html" class="hover:text-white transition-colors">📜 Termini di Servizio</a></li>
+                        <li><a href="privacy.html" class="hover:text-white transition-colors">🔒 Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
                     <h4 class="text-white font-semibold mb-4">Contatti</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>info@howmuchme.com</li>
-                        <li class="flex items-center gap-2"><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>howmuchme.com</li>
+                    <ul class="space-y-2.5 text-sm">
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>info@howmuchme.com</li>
+                        <li class="flex items-center gap-2"><svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>howmuchme.com</li>
                     </ul>
                 </div>
             </div>
 
             <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p class="text-sm">© 2026 HowMuchMe. Tutti i diritti riservati.</p>
-                <p class="text-sm flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>Versione 0.5 in sviluppo</p>
+                <div class="text-sm space-y-1">
+                    <p>© 2026 HowMuchMe. Tutti i diritti riservati. Marchio registrato.</p>
+                    <p class="text-xs text-slate-500">I preventivi presentati non costituiscono contratto pubblico o atto notarile ma mero impegno d'onore e buona fede.</p>
+                </div>
+                <div class="flex items-center gap-4 text-xs">
+                    <a href="termini.html" class="hover:text-slate-200">Termini</a>
+                    <span class="text-slate-600">·</span>
+                    <a href="privacy.html" class="hover:text-slate-200">Privacy Policy</a>
+                    <span class="text-slate-600">·</span>
+                    <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>Disponibile su Android & iOS</span>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Modale Termini & Privacy Policy -->
+    <div id="legalModal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/75 backdrop-blur-sm p-4 overflow-y-auto">
+        <div class="bg-slate-900 border border-slate-800 text-slate-200 rounded-2xl max-w-2xl w-full max-h-[85vh] flex flex-col shadow-2xl overflow-hidden my-auto animate-fade-in">
+            <div class="px-6 py-4 border-b border-slate-800 flex items-center justify-between bg-slate-950/60">
+                <h3 id="legalModalTitle" class="text-lg font-bold text-white flex items-center gap-2"></h3>
+                <button onclick="closeLegalModal()" class="text-slate-400 hover:text-white p-1 rounded-lg transition-colors" aria-label="Chiudi">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-4 text-sm leading-relaxed text-slate-300" id="legalModalContent">
+            </div>
+            <div class="px-6 py-4 border-t border-slate-800 bg-slate-950/60 flex justify-end">
+                <button onclick="closeLegalModal()" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm rounded-xl transition-all shadow-md">
+                    Ho Letto e Compreso
+                </button>
+            </div>
+        </div>
+    </div>
+
     <script>
+        const LEGAL_DOCS = {
+            terms: {
+                title: "📜 Termini e Condizioni di Servizio",
+                content: `
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
+                            <h4 class="text-white font-bold text-base mb-1">CONDIZIONI GENERALI DI SERVIZIO — HowMuchMe</h4>
+                            <p class="text-xs text-slate-400">Ultimo aggiornamento: Febbraio 2026</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">1. OGGETTO DEL SERVIZIO</h5>
+                            <p>HowMuchMe fornisce una piattaforma tecnologica che mette in contatto utenti privati richiedenti preventivi e imprese o professionisti erogatori di servizi.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">2. REGISTRAZIONE E ACCESSO</h5>
+                            <p>L'utente si impegna a fornire dati veritieri, aggiornati ed accurati all'atto della registrazione e nella formulazione delle richieste o dei preventivi.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">3. RESPONSABILITÀ</h5>
+                            <p>HowMuchMe non è parte dei contratti stipulati tra utenti privati ed imprese e non garantisce l'esito dei lavori o l'accuratezza dei preventivi formulati dalle imprese iscritte. I preventivi presentati costituiscono mero impegno d'onore e buona fede.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">4. PROPRIETÀ INTELLETTUALE</h5>
+                            <p>Tutti i marchi, loghi ed interfacce di HowMuchMe sono di proprietà esclusiva. Tutti i diritti riservati.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">5. MODIFICHE AI TERMINI</h5>
+                            <p>HowMuchMe si riserva il diritto di aggiornare le presenti condizioni previa notifica agli utenti sulla piattaforma.</p>
+                        </div>
+                    </div>
+                `
+            },
+            privacy: {
+                title: "🔒 Informativa sulla Privacy Policy",
+                content: `
+                    <div class="space-y-4">
+                        <div class="bg-slate-800/60 p-4 rounded-xl border border-slate-700/50">
+                            <h4 class="text-white font-bold text-base mb-1">INFORMATIVA PRIVACY POLICY (GDPR 2016/679)</h4>
+                            <p class="text-xs text-slate-400">Regolamento Europeo sulla Protezione dei Dati Personali</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">1. TITOLARE DEL TRATTAMENTO</h5>
+                            <p>Il titolare del trattamento dei dati è <strong>HowMuchMe</strong>. Per qualsiasi richiesta relativa alla privacy puoi scrivere all'indirizzo email <a href="mailto:info@howmuchme.com" class="text-blue-400 hover:underline">info@howmuchme.com</a>.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">2. TIPOLOGIA DI DATI RACCOLTI</h5>
+                            <p>Raccogliamo dati identificativi (nominativo, username, email, recapito telefonico, indirizzo/CAP) ed eventuali dati fiscali aziendali (Ragione Sociale, Partita IVA).</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">3. FINALITÀ DEL TRATTAMENTO</h5>
+                            <p>I dati sono trattati esclusivamente per consentire l'erogazione dei servizi di richiesta e formulazione preventivi, l'invio delle notifiche di sistema relative allo stato delle richieste e la gestione degli account.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">4. SICUREZZA E RISERVATEZZA</h5>
+                            <p>I tuoi recapiti sono protetti ed oscurati fino all'eventuale accettazione del preventivo, garantendo la massima riservatezza durante le fasi di consultazione iniziale.</p>
+                        </div>
+
+                        <div>
+                            <h5 class="text-white font-semibold mb-1">5. DIRITTI DELL'INTERESSATO</h5>
+                            <p>In qualsiasi momento l'utente può richiedere l'accesso, la rettifica o la cancellazione dei propri dati personali scrivendo a <a href="mailto:info@howmuchme.com" class="text-blue-400 hover:underline">info@howmuchme.com</a> oppure, qualora l’account sia già stato registrato, utilizzando autonomamente la funzione <em>“ELIMINA ACCOUNT DALLA PIATTAFORMA”</em> disponibile nella sezione <em>“Modifica Profilo”</em> dell'applicazione.</p>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        function openLegalModal(type) {
+            const doc = LEGAL_DOCS[type];
+            if (!doc) return;
+            document.getElementById('legalModalTitle').innerHTML = doc.title;
+            document.getElementById('legalModalContent').innerHTML = doc.content;
+            const modal = document.getElementById('legalModal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLegalModal() {
+            const modal = document.getElementById('legalModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+            // Rimuovi l'hash dall'URL senza ricaricare la pagina se era aperto da un hash
+            if (window.location.hash && (window.location.hash.toLowerCase().includes('privac') || window.location.hash.toLowerCase().includes('term'))) {
+                history.replaceState(null, null, ' ');
+            }
+        }
+
+        // Gestione apertura automatica da URL con Anchor Hash (es. #privacy, #termini, #terms, #privacypolicy)
+        function checkUrlHashForLegalDocs() {
+            const hash = (window.location.hash || '').toLowerCase().replace('#', '');
+            if (hash === 'privacy' || hash === 'privacypolicy' || hash === 'norme-privacy' || hash === 'norme-sulla-privacy') {
+                openLegalModal('privacy');
+            } else if (hash === 'termini' || hash === 'terms' || hash === 'termini-servizio' || hash === 'condizioni') {
+                openLegalModal('terms');
+            }
+        }
+
+        window.addEventListener('load', checkUrlHashForLegalDocs);
+        window.addEventListener('hashchange', checkUrlHashForLegalDocs);
+
+        // Chiudi modale cliccando fuori dal box
+        document.getElementById('legalModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLegalModal();
+            }
+        });
+
+        // Chiudi modale con tasto ESC
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLegalModal();
+            }
+        });
+
         function toggleDarkMode() {
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
