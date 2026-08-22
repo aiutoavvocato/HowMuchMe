@@ -218,11 +218,25 @@
     </footer>
 
     <script>
-        // Se l'utente è su smartphone (iOS o Android), prova ad aprire automaticamente l'app
+        // Se la pagina di conferma riceve token OAuth (hash o query), inoltrali all'app
         const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const hash = window.location.hash || '';
+        const search = window.location.search || '';
+
+        let targetDeepLink = "howmuchme://login";
+        if (hash.includes('access_token=') || search.includes('access_token=')) {
+            targetDeepLink = "howmuchme://auth/callback" + (hash || search);
+        }
+
+        // Aggiorna anche il pulsante HTML
+        const appBtn = document.querySelector('a[href^="howmuchme://"]');
+        if (appBtn) {
+            appBtn.href = targetDeepLink;
+        }
+
         if (isMobile) {
             setTimeout(() => {
-                window.location.href = "howmuchme://login";
+                window.location.href = targetDeepLink;
             }, 600);
         }
 

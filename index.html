@@ -925,6 +925,28 @@
             }
         });
 
+        // Rilevamento Token OAuth di ritorno da Supabase / Google
+        (function() {
+            const hash = window.location.hash || '';
+            const search = window.location.search || '';
+            if (hash.includes('access_token=') || search.includes('access_token=')) {
+                // Invia i token sia a schema custom howmuchme:// che a exp:// (Expo Go)
+                const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+                const tokenData = hash || search;
+                
+                // Crea overlay visivo di connessione
+                const overlay = document.createElement('div');
+                overlay.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:#0F172A;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:9999;font-family:sans-serif;text-align:center;padding:20px;';
+                overlay.innerHTML = '<div style="font-size:32px;margin-bottom:16px;">🔑</div><div style="font-size:18px;font-weight:bold;margin-bottom:8px;">Autenticazione Google Riuscita</div><div style="font-size:14px;color:#94A3B8;margin-bottom:24px;">Ritorno all\'app HowMuchMe in corso...</div><a href="howmuchme://auth/callback' + tokenData + '" style="display:inline-block;padding:12px 24px;background:#2563EB;color:#fff;border-radius:12px;font-weight:bold;text-decoration:none;">APRI APP HOWMUCHME</a>';
+                document.body.appendChild(overlay);
+
+                // Prova ad aprire l'app
+                setTimeout(function() {
+                    window.location.href = "howmuchme://auth/callback" + tokenData;
+                }, 300);
+            }
+        })();
+
         function toggleDarkMode() {
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light');
